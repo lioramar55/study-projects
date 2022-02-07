@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>What's in the picture?</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="init()">
+        <div class="game-container">
+            <h1>Touch-Nums</h1>
+            <form>
+                <div class="levels">
+                    <label for="16" checked>Easy(4X4)</label>
+                    <input type="radio" id="level1" name="level" value="4" focus />
+                    <label for="25">Medium(5X5)</label>
+                    <input type="radio" id="level2" name="level" value="5" />
+                    <label for="36">Hard(6X6)</label>
+                    <input type="radio" id="level3" name="level" value="6" />
+                    <button class="btn" type="submit">New Game</button>
+                </div>
+            </form>
+            <h3>
+                Time: <span class="mins">00</span>:<span class="secs">00</span>:<span class="milis"
+                    >000</span
+                >
+            </h3>
+            <h4>Next Number: <span></span></h4>
+            <h4 class="greet">You Won!</h4>
+            <table border="1" cellpadding="20">
+                <tbody class="board"></tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
